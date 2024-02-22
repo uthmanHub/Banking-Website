@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer utilities {
+  .btn {
+    @apply bg-color-secondary px-9 py-3 rounded-md font-bold capitalize hover:opacity-80 ease-in duration-200;
   }
+
+  .card_btn {
+    @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
+  }
+
+  .title {
+    @apply text-3xl md:text-4xl font-bold leading-snug;
+  }
+
+  .blob1 {
+    @apply w-80 h-80 bg-color-blob absolute top-0 -left-5 z-50 blur-2xl overflow-hidden opacity-30  rounded-full;
+  }
+
+  .blob2 {
+    @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 z-50 blur-2xl overflow-hidden opacity-30  rounded-full;
+  }
+
+  /* @media (min-width: 1024px) {
+    .line::after {
+      content: ' ';
+      background-image: url(./image/line2.png);
+      display: flex;
+      position: absolute;
+      top: 2rem;
+      left: 8rem;
+      background-repeat: no-repeat;
+      height: 1.5rem;
+      width: 13rem;
+    }
+  }
+
+
+  @media (min-width: 1536px) {
+    .line2::after {
+        content: '';
+        left: 13rem/* 208px *;
+    }
+  } */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.card {
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.front {
+  overflow: hidden;
 }
