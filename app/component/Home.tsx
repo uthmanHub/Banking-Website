@@ -13,7 +13,7 @@ const Home = () => {
               <h1 className='title mb-4'>Awesome App for your Financial.</h1>
               <p className='leading-relaxed mb-10 '>
                 This should be used to tell a story and let your user know a
-                little more about app and it's use, how it can benefit them{" "}
+                little more about app and its use, how it can benefit them{" "}
               </p>
               <button className='btn'>Download app</button>
             </div>

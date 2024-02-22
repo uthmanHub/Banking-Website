@@ -32,7 +32,7 @@ const HowItWorks = () => {
           {/* card 1 */}
           {steps.map(({ stepCount, stepName, stepDescription }) => {
             return (
-              <div className='text-center cursor-pointer'>
+              <div key={stepCount} className='text-center cursor-pointer'>
                 <div
                   className={`relative ${
                     stepCount === 2
