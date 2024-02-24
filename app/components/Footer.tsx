@@ -48,11 +48,8 @@ const Footer = () => {
                 <p>Follow us</p>
                 {socialLinks.map(({ id, iconName, refLink }) => {
                   return (
-                    <Link href={refLink} target='_blank'>
-                      <div
-                        key={id}
-                        className='cursor-pointer hover:text-color-secondary'
-                      >
+                    <Link key={id} href={refLink} target='_blank'>
+                      <div className='cursor-pointer hover:text-color-secondary'>
                         {iconName}
                       </div>
                     </Link>
