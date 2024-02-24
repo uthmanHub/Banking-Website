@@ -29,7 +29,7 @@ const HowItWorks = () => {
         </div>
 
         <div className='flex flex-col item-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6'>
-          {/* card 1 */}
+          {/* card  */}
           {steps.map(({ stepCount, stepName, stepDescription }) => {
             return (
               <div key={stepCount} className='text-center cursor-pointer'>

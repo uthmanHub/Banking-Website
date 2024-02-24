@@ -76,8 +76,11 @@ const Download = () => {
                 rows={4}
                 className='text-color-primary-dark mt-10 bg-gray-50 border border-gray-300 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary '
                 placeholder='Message'
+                required
               ></textarea>
-              <button className='btn mt-10'>Send Message</button>
+              <button type='submit' className='btn mt-10'>
+                Send Message
+              </button>
             </div>
           </form>
         </div>

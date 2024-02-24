@@ -1,12 +1,12 @@
-import Blog from "./component/Blog";
-import Download from "./component/Download";
-import Features from "./component/Features";
-import Footer from "./component/Footer";
-import Home from "./component/Home";
-import HowItWorks from "./component/HowItWorks";
-import Pricing from "./component/Pricing";
-import Review from "./component/Review";
-import Saving from "./component/Saving";
+import Blog from "./components/Blog";
+import Download from "./components/Download";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import HowItWorks from "./components/HowItWorks";
+import Pricing from "./components/Pricing";
+import Review from "./components/Review";
+import Saving from "./components/Saving";
 
 const page = () => (
   <div className='overflow-hi den '>

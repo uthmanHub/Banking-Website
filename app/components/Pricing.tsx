@@ -1,6 +1,5 @@
 "use client";
 
-// import { Link, Element } from 'react-scroll';
 import { useState } from "react";
 import { IoBookmark } from "react-icons/io5";
 
@@ -222,7 +221,6 @@ const Pricing = () => {
   ];
 
   return (
-    // <Element name='pricing'>
     <section id='pricing' className='bg-color-primary-light'>
       <div className='container py-20'>
         <div className='text-center m-auto mb-20 md:w-1/2'>
@@ -345,7 +343,6 @@ const Pricing = () => {
         </div>
       </div>
     </section>
-    // </Element>
   );
 };
 

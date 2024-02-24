@@ -1,5 +1,5 @@
 import Image from "next/image";
-import imgSaving from "./../image/hero1.png";
+import imgSaving from "./../image/saving.png";
 
 const Saving = () => {
   return (

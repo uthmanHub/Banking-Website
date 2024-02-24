@@ -22,6 +22,15 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/NavBar.tsx", "app/component/Features.tsx", "app/component/Review.tsx", "tailwind.config.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/NavBar.tsx",
+    "app/components/Features.tsx",
+    "app/components/Review.tsx",
+    "tailwind.config.js"
+  ],
   "exclude": ["node_modules"]
 }

@@ -46,7 +46,7 @@ const Review = () => {
     {
       id: 5,
       content:
-        '"I have been using mobile banking site for over a year now and I love it! I can\'t imagine life without it. It\'s so easy to use, and the customer service is great."',
+        "\"I have been using mobile banking site for over a year now and I love it! I can't imagine life without it. It's so easy to use, and the customer service is great.\"",
       name: "Mark Joe",
       job: "Mobile developer",
     },
@@ -89,7 +89,6 @@ const Review = () => {
     return item.id === click;
   });
 
-  
   return (
     <section id='testimonial'>
       <div className=' py-20'>

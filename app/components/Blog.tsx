@@ -3,7 +3,6 @@ import Link from "next/link";
 import blog1 from "./../image/blog1.png";
 import blog2 from "./../image/blog2.png";
 import blog3 from "./../image/blog3.jpeg";
-// import { Link, Element } from 'react-scroll';
 
 const Blog = () => {
   const blogList = [

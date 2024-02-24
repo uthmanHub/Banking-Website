@@ -22,28 +22,6 @@
   .blob2 {
     @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 z-50 blur-2xl overflow-hidden opacity-30  rounded-full;
   }
-
-  /* @media (min-width: 1024px) {
-    .line::after {
-      content: ' ';
-      background-image: url(./image/line2.png);
-      display: flex;
-      position: absolute;
-      top: 2rem;
-      left: 8rem;
-      background-repeat: no-repeat;
-      height: 1.5rem;
-      width: 13rem;
-    }
-  }
-
-
-  @media (min-width: 1536px) {
-    .line2::after {
-        content: '';
-        left: 13rem/* 208px *;
-    }
-  } */
 }
 
 .card {

@@ -8,6 +8,28 @@ import {
 import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      id: 1,
+      iconName: <FaFacebook />,
+      refLink: "https://www.facebook.com",
+    },
+    {
+      id: 1,
+      iconName: <FaXTwitter />,
+      refLink: "https://www.twitter.com",
+    },
+    {
+      id: 1,
+      iconName: <FaLinkedin />,
+      refLink: "https://www.linkedin.com",
+    },
+    {
+      id: 1,
+      iconName: <FaInstagram />,
+      refLink: "https://www.instagram.com",
+    },
+  ];
   return (
     <section id='footer'>
       <div className='bg-color-primary-dark relative'>
@@ -24,10 +46,18 @@ const Footer = () => {
               </p>
               <div className='flex gap-5 items-center'>
                 <p>Follow us</p>
-                <FaFacebook className='cursor-pointer hover:text-color-secondary' />
-                <FaXTwitter className='cursor-pointer hover:text-color-secondary' />
-                <FaLinkedin className='cursor-pointer hover:text-color-secondary' />
-                <FaInstagram className='cursor-pointer hover:text-color-secondary' />
+                {socialLinks.map(({ id, iconName, refLink }) => {
+                  return (
+                    <Link href={refLink} target='_blank'>
+                      <div
+                        key={id}
+                        className='cursor-pointer hover:text-color-secondary'
+                      >
+                        {iconName}
+                      </div>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
 
@@ -87,19 +117,21 @@ const Footer = () => {
                 Explicabo nemo, doloribus sunt labore voluptates repudiandae,
                 ipsam accusantium quis dolor unde dolorem, est eveniet.
               </p>
-              <div className='flex items-center'>
-                <input
-                  type='text'
-                  className='w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none'
-                  placeholder='Enter Your Email'
-                  required
-                />
-                <button
-                  type='submit'
-                  className='bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-80'
-                >
-                  <FaChevronRight size='24' />
-                </button>
+              <div>
+                <form action='' className='flex items-center'>
+                  <input
+                    type='email'
+                    className='w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none'
+                    placeholder='Enter Your Email'
+                    required
+                  />
+                  <button
+                    className='bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-80'
+                    type='submit'
+                  >
+                    <FaChevronRight size='24' />
+                  </button>
+                </form>
               </div>
             </div>
           </div>
