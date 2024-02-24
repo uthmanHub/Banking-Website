@@ -15,17 +15,17 @@ const Footer = () => {
       refLink: "https://www.facebook.com",
     },
     {
-      id: 1,
+      id: 2,
       iconName: <FaXTwitter />,
       refLink: "https://www.twitter.com",
     },
     {
-      id: 1,
+      id: 3,
       iconName: <FaLinkedin />,
       refLink: "https://www.linkedin.com",
     },
     {
-      id: 1,
+      id: 4,
       iconName: <FaInstagram />,
       refLink: "https://www.instagram.com",
     },
