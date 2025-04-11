@@ -30,6 +30,8 @@ const Footer = () => {
       refLink: "https://www.instagram.com",
     },
   ];
+
+  let date = new Date().getFullYear()
   return (
     <section id='footer'>
       <div className='bg-color-primary-dark relative'>
@@ -135,7 +137,7 @@ const Footer = () => {
 
           <div className='flex text-center justify-center pt-10 border-t border-color-gray '>
             <p>
-              {new Date().getFullYear()} &copy; UthmanCode, All Rights Reserved.
+              {date} &copy; UthmanCode, All Rights Reserved.
             </p>
           </div>
         </div>
